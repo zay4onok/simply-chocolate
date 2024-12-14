@@ -31,13 +31,13 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- ! header -->
+
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <div class="logo">
-            <a class="logo__link" href="./index.html" aria-label="logo"
-              >SIMPLY CHOCOLATE
-            </a>
+            <a class="logo__link" href="./index.html" aria-label="logo">SIMPLY CHOCOLATE </a>
             <svg class="logo__svg" width="24" height="24">
               <use href="./images/icons.svg#icon-logo" />
             </svg>
@@ -97,8 +97,36 @@
       </div>
     </header>
 
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="hero__title"
+              >Treat yourself or a loved one to our finest ingredients for a moment of pure
+              delight!</h1
+            >
+            <div class="hero__btn-wrapper">
+              <button class="hero__btn yellow-btn" type="button" aria-label="'Buy now' button">
+                Buy now
+              </button>
+              <button class="hero__btn white-btn" type="button" aria-label="'How it’s made' button">
+                How it’s made
+              </button>
+            </div>
+            <a class="hero__btn scroll-btn" href="#" aria-label="'scroll down' button">
+              scroll down
+              <svg class="scroll-btn__svg" width="28" height="28">
+                <use href="./images/icons.svg#icon-down" /></svg
+            ></ф>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ! mobile-menu -->
+
     <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button class="mobile-menu__close js-close-menu" aria-label="close menu button">
+      <button class="mobile-menu__close js-close-menu" type="button" aria-label="close menu button">
         <svg class="mobile-menu__close-svg" width="12" height="12">
           <use href="./images/icons.svg#icon-close" />
         </svg>
@@ -108,7 +136,9 @@
           <a class="mobile-menu__link current" href="./index.html" aria-label="'Home' link">Home</a>
         </li>
         <li class="mobile-menu__item"
-          ><a class="mobile-menu__link" href="#" aria-label="'How it’s made?'' link">How it’s made?</a>
+          ><a class="mobile-menu__link" href="#" aria-label="'How it’s made?'' link"
+            >How it’s made?</a
+          >
         </li>
         <li class="mobile-menu__item"
           ><a class="mobile-menu__link" href="#" aria-label="'Chocolate is love' link"
@@ -138,6 +168,9 @@
         </li>
       </ul>
     </div>
+
+    <!-- ! scrtipts -->
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
