@@ -216,7 +216,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   padding: 20px;
