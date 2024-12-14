@@ -25,8 +25,82 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Montserrat:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ! styles -->
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="./index.html" aria-label="logo"
+            >SIMPLY CHOCOLATE
+            <svg class="logo__svg" width="21" height="21">
+              <use href="./images/icons.svg#icon-logo" />
+            </svg>
+          </a>
+          <button
+            class="menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="open menu button"
+          >
+            <svg class="menu-btn__svg" width="21" height="14">
+              <use href="./images/icons.svg#icon-menu" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__close js-close-menu" aria-label="close menu button">
+        <svg class="mobile-menu__close-svg" width="12" height="12">
+          <use href="./images/icons.svg#icon-close" />
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="moda__link current" href="./index.html" aria-label="'Home' link">Home</a>
+        </li>
+        <li class="mobile-menu__item"
+          ><a class="moda__link" href="#" aria-label="'How it’s made?'' link">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item"
+          ><a class="moda__link" href="#" aria-label="'Chocolate is love' link"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+      <ul class="social-media">
+        <li class="social-media__item">
+          <a class="social-media__link" href="" aria-label="facebook link">
+            <svg class="social-media__svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook" />
+            </svg>
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link" href="" aria-label="instagram link"
+            ><svg class="social-media__svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram" /></svg
+          ></a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link" href="" aria-label="twitter link"
+            ><svg class="social-media__svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter" /></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
