@@ -211,19 +211,22 @@ button {
 .hero__inner {
   height: calc(100vh - 62px);
   max-height: 620px;
-  background-color: rgba(17, 17, 17, 0.4);
-  background-image: url(../images/hero-bg_mob@1x.jpg);
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url(../images/hero-bg_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 .hero__title {
   margin-top: auto;
   font-weight: 500;
-  
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: var(--white);
 }
 .hero__btn {
 }
@@ -234,6 +237,13 @@ button {
 .scroll-btn {
 }
 .scroll-btn__svg {
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__inner {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(../images/hero-bg_mob@2x.jpg);
+  }
 }
 
 @media only screen and (min-width: 768px) {
