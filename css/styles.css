@@ -48,7 +48,7 @@ button {
 }
 
 .container {
-  max-width: 767.98px;
+  max-width: 375px;
   min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
@@ -98,8 +98,8 @@ button {
   padding: 116px 20px 20px;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 220px;
   height: 100%;
   background-color: var(--violet);
   transform: translateX(100%);
@@ -159,4 +159,10 @@ button {
 
 .social-media__svg {
   fill: currentColor;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: ;
+  }
 }
