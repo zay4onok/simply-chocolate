@@ -176,6 +176,9 @@ button {
   .container {
     max-width: 768px;
   }
+  .header__inner {
+    padding-bottom: 20px;
+  }
   .menu-btn {
     display: none;
   }
