@@ -110,7 +110,7 @@
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <div class="hero__inner">
             <h1 class="hero__title"
@@ -118,21 +118,27 @@
               delight!</h1
             >
             <div class="hero__btn-wrapper">
-              <button class="hero__btn yellow-btn" type="button" aria-label="'Buy now' button">
+              <button class="hero__btn yellow-btn btn" type="button" aria-label="'Buy now' button">
                 Buy now
               </button>
-              <button class="hero__btn white-btn" type="button" aria-label="'How it’s made' button">
+              <button
+                class="hero__btn white-btn btn"
+                type="button"
+                aria-label="'How it’s made' button"
+              >
                 How it’s made
               </button>
             </div>
-            <a class="hero__btn scroll-btn" href="#" aria-label="'scroll down' button">
-              scroll down
-              <div class="scroll-btn__svg-box">
-                <svg class="scroll-btn__svg" width="16" height="16">
-                  <use href="./images/icons.svg#icon-down" />
-                </svg>
-              </div>
-            </a>
+            <div class="hero__btn">
+              <a class="hero__link scroll-btn" href="#" aria-label="'scroll down' button">
+                scroll down
+                <div class="scroll-btn__svg-box">
+                  <svg class="scroll-btn__svg" width="16" height="16">
+                    <use href="./images/icons.svg#icon-down" />
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -47,12 +47,16 @@ button {
   padding: 0;
   cursor: pointer;
   outline: none;
+}
+
+.btn {
   font-family: 'Montserrat', serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 600;
   border-radius: 100px;
   padding: 12px 28px;
+  transition: all 300ms;
 }
 
 .container {
@@ -60,6 +64,10 @@ button {
   min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 80px;
 }
 
 /* ! header */
@@ -215,7 +223,7 @@ button {
 /* ! hero */
 
 .hero__inner {
-  height: calc(100vh - 62px);
+  height: calc(100vh - 82px);
   max-height: 620px;
   background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
     url(../images/hero-bg_mob@1x.jpg);
@@ -245,17 +253,48 @@ button {
   color: var(--white);
   background-color: var(--accent);
 }
+
+.yellow-btn:hover,
+.yellow-btn:focus,
+.yellow-btn:active {
+  color: var(--accent);
+  background-color: rgba(252, 241, 224, 1);
+}
+
 .white-btn {
   color: var(--white);
   border: 1px solid var(--white);
 }
+
+.white-btn:hover,
+.white-btn:focus,
+.white-btn:active {
+  color: #fd9222;
+  border-color: #fd9222;
+}
+
 .scroll-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: var(--white);
   font-size: 12px;
   font-weight: 500;
+  transition: all 300ms;
 }
+
+.scroll-btn:hover,
+.scroll-btn:focus,
+.scroll-btn:active {
+  color: var(--accent);
+}
+
+.scroll-btn:hover .scroll-btn__svg-box,
+.scroll-btn:focus .scroll-btn__svg-box,
+.scroll-btn:active .scroll-btn__svg-box {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
 .scroll-btn__svg-box {
   display: flex;
   justify-content: center;
@@ -266,6 +305,7 @@ button {
   background-color: var(--white);
   margin-left: 12px;
   color: var(--accent);
+  transition: all 300ms;
 }
 .scroll-btn__svg {
   fill: currentColor;
@@ -320,5 +360,11 @@ button {
   }
   .logo {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 374.98px) {
+  .btn {
+    padding: 12px 14px;
   }
 }
