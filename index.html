@@ -34,48 +34,54 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="./index.html" aria-label="logo"
-            >SIMPLY CHOCOLATE
-            <svg class="logo__svg" width="21" height="21">
+          <div class="logo">
+            <a class="logo__link" href="./index.html" aria-label="logo"
+              >SIMPLY CHOCOLATE
+            </a>
+            <svg class="logo__svg" width="24" height="24">
               <use href="./images/icons.svg#icon-logo" />
             </svg>
-          </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="./index.html" aria-label="'Home' link">Home</a>
+          </div>
+          <div class="nav-media-wrapper">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="./index.html" aria-label="'Home' link">Home</a>
+                </li>
+                <li class="nav__item"
+                  ><a class="nav__link" href="#" aria-label="'How it’s made?'' link"
+                    >How it’s made?</a
+                  >
+                </li>
+                <li class="nav__item"
+                  ><a class="nav__link" href="#" aria-label="'Chocolate is love' link"
+                    >Chocolate is loved</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a class="social-media__link" href="" aria-label="facebook link">
+                  <svg class="social-media__svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook" />
+                  </svg>
+                </a>
               </li>
-              <li class="nav__item"
-                ><a class="nav__link" href="#" aria-label="'How it’s made?'' link">How it’s made?</a>
+              <li class="social-media__item">
+                <a class="social-media__link" href="" aria-label="instagram link"
+                  ><svg class="social-media__svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram" /></svg
+                ></a>
               </li>
-              <li class="nav__item"
-                ><a class="nav__link" href="#" aria-label="'Chocolate is love' link"
-                  >Chocolate is loved</a
-                >
+              <li class="social-media__item">
+                <a class="social-media__link" href="" aria-label="twitter link"
+                  ><svg class="social-media__svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter" /></svg
+                ></a>
               </li>
             </ul>
-          </nav>
-          <ul class="social-media">
-            <li class="social-media__item">
-              <a class="social-media__link" href="" aria-label="facebook link">
-                <svg class="social-media__svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="" aria-label="instagram link"
-                ><svg class="social-media__svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram" /></svg
-              ></a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="" aria-label="twitter link"
-                ><svg class="social-media__svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter" /></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
           <button
             class="menu-btn js-open-menu"
             type="button"
@@ -90,13 +96,6 @@
         </div>
       </div>
     </header>
-
-
-
-
-
-
-
 
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="mobile-menu__close js-close-menu" aria-label="close menu button">

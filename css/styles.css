@@ -65,6 +65,11 @@ button {
 }
 
 .logo {
+  display: flex;
+  gap: 4px;
+}
+
+.logo__link {
   font-weight: 700;
   font-style: italic;
   line-height: 1.3;
@@ -74,14 +79,22 @@ button {
 }
 
 .logo__svg {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: none;
   stroke: var(--accent);
-  margin-left: 4px;
+}
+
+.nav-media-wrapper {
+  display: flex;
+  gap: 28px;
+  align-items: center;
 }
 
 .nav {
   display: none;
+  font-weight: 500;
 }
 
 .header .social-media {
@@ -196,5 +209,17 @@ button {
   .header .social-media__item {
     border: 1px solid rgba(17, 17, 17, 0.1);
     color: var(--body-text);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .nav-media-wrapper {
+    gap: 90px;
+  }
+  .logo {
+   font-size: 18px;
   }
 }
