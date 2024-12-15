@@ -21,6 +21,7 @@ body {
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--body-text);
+  background-color: var(--light);
 }
 
 a {
@@ -364,7 +365,7 @@ button {
 
 /* ! components */
 
-.components__title {
+.h2 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -373,7 +374,7 @@ button {
   margin: 0 auto;
   margin-bottom: 32px;
 }
-.components__title span {
+.h2 span {
   color: var(--accent);
 }
 
@@ -392,7 +393,7 @@ button {
 .components__item--accent {
   background-color: var(--accent);
 }
-.components__item--accent .components__svg-fill{
+.components__item--accent .components__svg-fill {
   stroke: var(--white);
 }
 
@@ -401,13 +402,14 @@ button {
 }
 
 .components__item--white {
+  background-color: var(--white);
   border: 1px solid var(--accent);
 }
 
 .components__item--black {
   background-color: var(--violet);
 }
-.components__item--black .components__svg-fill{
+.components__item--black .components__svg-fill {
   stroke: var(--white);
 }
 
@@ -438,10 +440,37 @@ button {
   padding: 0 28px 28px 28px;
 }
 
+/* ! made */
+
+.made {
+}
+
+.made__video {
+  border-radius: 15px;
+  height: 500px;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url(../images/made_mob@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.made__video-img {
+  cursor: pointer;
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__inner {
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
       url(../images/hero-bg_mob@2x.webp);
+  }
+  .made__video {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(../images/made_mob@2x.webp);
   }
 }
 
@@ -542,7 +571,7 @@ button {
     min-height: 244px;
   }
 
-  .components__title {
+  .h2 {
     font-size: 24px;
     line-height: 1.17;
     max-width: 411px;
