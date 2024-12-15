@@ -542,11 +542,12 @@ button {
   margin-bottom: 18px;
 }
 .products__item-price {
+  display: inline-block;
+  font-weight: 600;
   padding: 8px 20px;
   background-color: var(--light);
   border: 1px solid #1111111A;
   border-radius: 100px;
-  max-width: 94px;
   margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -698,6 +699,15 @@ button {
 
   .made__descr {
     padding: 32px;
+  }
+
+  .products__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    width: calc((100% - 32px) / 2);
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
