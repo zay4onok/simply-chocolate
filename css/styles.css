@@ -324,15 +324,12 @@ button {
 }
 
 .features__item {
+  min-height: 244px;
   margin-bottom: 20px;
 }
-
-.features__item:nth-of-type(1) {
-  margin-bottom: 36px;
-}
-
 .features__item:last-of-type {
-  margin-bottom: 14px;
+  min-height: 225px;
+  margin-bottom: 0px;
 }
 
 .features__box {
@@ -424,6 +421,21 @@ button {
   .scroll-btn__svg {
     width: 22px;
     height: 22px;
+  }
+  .features {
+    padding: 50px 0;
+  }
+  .features__list {
+    display: flex;
+    gap: 44px 88px;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: calc((100% - 88px) / 2);
+    margin-bottom: 0;
+  }
+  .features__item:last-of-type {
+    min-height: 244px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
