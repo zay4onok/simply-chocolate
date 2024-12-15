@@ -82,24 +82,12 @@ button {
 
 .logo {
   display: flex;
+  align-items: center;
   gap: 4px;
-}
-
-.logo__link {
   font-weight: 700;
   font-style: italic;
   line-height: 1.3;
   letter-spacing: -0.03em;
-  display: flex;
-  align-items: center;
-}
-
-.logo__svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: none;
-  stroke: var(--accent);
 }
 
 .nav-media-wrapper {
@@ -121,13 +109,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
-  color: var(--body-text);
-}
-
-.menu-btn__svg {
-  stroke: currentColor;
 }
 
 /* ! mobile-menu */
@@ -153,17 +134,10 @@ button {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 28px;
-  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
   cursor: pointer;
-}
-
-.mobile-menu__close-svg {
-  stroke: currentColor;
 }
 
 .mobile-menu__list {
@@ -190,6 +164,7 @@ button {
   width: 40px;
   height: 40px;
 }
+
 .social-media__link {
   display: flex;
   justify-content: center;
@@ -198,26 +173,29 @@ button {
   height: 100%;
   cursor: pointer;
 
-  color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   transition: border-color 300ms, color 300ms;
 }
 
 .header .social-media__link {
-  color: var(--body-text);
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
 
-.social-media__link:focus,
-.social-media__link:hover,
-.social-media__link:active {
-  color: var(--accent);
-  border-color: rgba(253, 146, 34, 0.1);
+.social-media__svg-fill {
+  transition: fill 300ms;
 }
 
-.social-media__svg {
-  fill: currentColor;
+.social-media__link:focus .social-media__svg-fill,
+.social-media__link:hover .social-media__svg-fill,
+.social-media__link:active .social-media__svg-fill {
+  fill: var(--accent);
+}
+
+.social-media__link:hover,
+.social-media__link:focus,
+.social-media__link:active {
+  border-color: rgba(253, 146, 34, 0.1);
 }
 
 /* ! hero */
@@ -295,7 +273,6 @@ button {
 .scroll-btn:focus .scroll-btn__svg-box,
 .scroll-btn:active .scroll-btn__svg-box {
   background-color: var(--accent);
-  color: var(--white);
 }
 
 .scroll-btn__svg-box {
@@ -307,12 +284,19 @@ button {
   border-radius: 50%;
   background-color: var(--white);
   margin-left: 12px;
-  color: var(--accent);
   transition: color 300ms, background-color 300ms;
 }
-.scroll-btn__svg {
-  fill: currentColor;
+
+.scroll-btn__svg-fill {
+  transition: fill 300ms;
 }
+
+.scroll-btn:hover .scroll-btn__svg-fill,
+.scroll-btn:focus .scroll-btn__svg-fill,
+.scroll-btn:active .scroll-btn__svg-fill {
+  fill: var(--white);
+}
+
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__inner {
