@@ -641,6 +641,13 @@ button {
     height: 400px;
   }
 
+  .made__subtitle {
+    max-width: 350px;
+  }
+  .made__item {
+    max-width: 480px;
+  } 
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
