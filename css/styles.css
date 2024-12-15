@@ -675,10 +675,20 @@ button {
   .components__img {
     padding: 28px 23px 36px;
   }
+  .made__video {
+    background-image: url(../images/made_desk@1x.webp);
+  }
+  .container.made-container {
+    max-width: 1200px;
+    padding: 0 32px;
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
         url(../images/hero-bg_desk@2x.webp);
+    }
+    .made__video {
+      background-image: url(../images/made_desk@2x.webp);
     }
   }
 }
