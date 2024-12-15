@@ -242,6 +242,7 @@ button {
   letter-spacing: -0.03em;
   color: var(--white);
   margin-bottom: 32px;
+  max-width: 293px;
 }
 .hero__btn-wrapper {
   display: flex;
@@ -359,6 +360,7 @@ button {
   }
   .hero__title {
     font-size: 28px;
+    max-width: 484px;
   }
   .btn {
     padding: 14px 40px;
@@ -394,6 +396,17 @@ button {
   }
   .logo {
     font-size: 18px;
+  }
+  .hero__inner {
+    height: calc(100vh - 102px);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(../images/hero-bg_desk@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero__inner {
+      background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+        url(../images/hero-bg_desk@2x.jpg);
+    }
   }
 }
 
