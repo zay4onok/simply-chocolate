@@ -201,6 +201,10 @@ button {
 
 /* ! hero */
 
+.hero {
+  margin-bottom: 80px;
+}
+
 .hero__inner {
   height: calc(100vh - 82px);
   max-height: 620px;
@@ -448,7 +452,7 @@ button {
   }
 
   .section {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
   }
 
   .header__inner {
@@ -481,6 +485,10 @@ button {
 
   .header .social-media__svg {
     fill: currentColor;
+  }
+
+  .hero {
+    margin-bottom: 40px;
   }
 
   .hero__inner {
@@ -534,8 +542,18 @@ button {
     min-height: 244px;
   }
 
+  .components__item {
+    width: calc((100% - 32px) / 2);
+  }
+
   .components__item-optional {
     display: list-item;
+  }
+
+  .components__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -570,6 +588,10 @@ button {
   .logo__svg {
     width: 24px;
     height: 24px;
+  }
+
+  .hero {
+    margin-bottom: 80px;
   }
 
   .hero__inner {
