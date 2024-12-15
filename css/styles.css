@@ -297,7 +297,6 @@ button {
   fill: var(--white);
 }
 
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__inner {
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
@@ -308,6 +307,7 @@ button {
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
   .header__inner {
     padding-bottom: 20px;
