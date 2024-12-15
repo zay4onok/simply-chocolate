@@ -126,6 +126,7 @@ button {
   transform: translateX(100%);
   transition: transform 300ms ease-in-out;
 }
+
 .mobile-menu.is-open {
   transform: translateX(0);
 }
@@ -213,6 +214,7 @@ button {
   flex-direction: column;
   padding: 20px;
 }
+
 .hero__title {
   margin-top: auto;
   font-weight: 500;
@@ -222,6 +224,7 @@ button {
   margin-bottom: 32px;
   max-width: 293px;
 }
+
 .hero__bottom-wrapper {
   display: flex;
   justify-content: space-between;
@@ -327,6 +330,7 @@ button {
   min-height: 244px;
   margin-bottom: 20px;
 }
+
 .features__item:last-of-type {
   min-height: 225px;
   margin-bottom: 0px;
@@ -366,15 +370,19 @@ button {
     max-width: 768px;
     padding: 0 32px;
   }
+
   .section {
     margin-bottom: 40px;
   }
+
   .header__inner {
     padding-bottom: 20px;
   }
+
   .menu-btn {
     display: none;
   }
+
   .nav {
     display: block;
   }
@@ -383,9 +391,11 @@ button {
     display: flex;
     gap: 20px;
   }
+
   .header .social-media {
     display: flex;
   }
+
   .header .social-media__link:focus,
   .header .social-media__link:hover,
   .header .social-media__link:active {
@@ -396,47 +406,58 @@ button {
   .header .social-media__svg {
     fill: currentColor;
   }
+
   .hero__inner {
     height: calc(100vh - 102px);
     padding: 40px;
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
       url(../images/hero-bg_tab@1x.jpg);
   }
+
   .hero__title {
     font-size: 28px;
     max-width: 484px;
   }
+
   .btn {
     padding: 14px 40px;
   }
+
   .scroll-btn {
     font-size: 14px;
     line-height: 1.3;
     gap: 14px;
   }
+
   .scroll-btn__svg-box {
     width: 38px;
     height: 38px;
   }
+
   .scroll-btn__svg {
     width: 22px;
     height: 22px;
   }
+
   .features {
     padding: 50px 0;
   }
+
   .features__list {
     display: flex;
     gap: 44px 88px;
     flex-wrap: wrap;
   }
+
   .features__item {
     width: calc((100% - 88px) / 2);
     margin-bottom: 0;
   }
+  
   .features__item:last-of-type {
     min-height: 244px;
   }
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
@@ -449,26 +470,52 @@ button {
   .container {
     max-width: 1200px;
   }
+
   .section {
     margin-bottom: 80px;
   }
+
   .nav-media-wrapper {
     gap: 90px;
   }
+
   .nav__list {
     gap: 24px;
   }
+
   .logo {
     font-size: 18px;
   }
+
   .logo__svg {
     width: 24px;
     height: 24px;
   }
+
   .hero__inner {
     height: calc(100vh - 102px);
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
       url(../images/hero-bg_desk@1x.jpg);
+  }
+
+  .features__item {
+    position: relative;
+    width: calc((100% - 176px) / 3);
+  }
+
+  .features__item:not(:last-of-type)::after {
+    position: absolute;
+    content: "";
+    height: 124px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    right: -44px;
+    transform: translateY(-50%);
+  }
+
+  .features__item-text {
+    line-height: 1.3;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
