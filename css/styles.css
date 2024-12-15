@@ -316,6 +316,9 @@ button {
     max-width: 768px;
     padding: 0 32px;
   }
+  .section {
+    margin-bottom: 40px;
+  }
   .header__inner {
     padding-bottom: 20px;
   }
@@ -381,12 +384,15 @@ button {
   .container {
     max-width: 1200px;
   }
+  .section {
+    margin-bottom: 80px;
+  }
   .nav-media-wrapper {
     gap: 90px;
   }
   .nav__list {
     gap: 24px;
-}
+  }
   .logo {
     font-size: 18px;
   }
