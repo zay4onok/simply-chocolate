@@ -804,6 +804,15 @@ button {
   .made__text {
     padding-right: 27px;
   }
+  .products__box {
+    padding: 32px 20px;
+  }
+  .products__list {
+    gap: 24px 18px;
+  }
+  .products__item {
+    width: calc((100% - 54px) / 4);
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
