@@ -447,6 +447,7 @@ button {
 .made__video {
   border-radius: 15px;
   height: 500px;
+  width: 100%;
   background-image: url(../images/made_mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -492,16 +493,15 @@ button {
 
 .made__text::before {
   position: absolute;
-  content: "";
+  content: '';
   height: 8px;
   width: 8px;
   background-color: var(--gray);
-  border: 1px solid #ECEDED;
+  border: 1px solid #eceded;
   border-radius: 50%;
   top: 5px;
   left: 0;
 }
-
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__inner {
@@ -643,10 +643,16 @@ button {
 
   .made__subtitle {
     max-width: 350px;
+    margin-bottom: 28px;
   }
-  .made__item {
-    max-width: 480px;
-  } 
+
+  .made__text {
+    padding-right: 70px;
+  }
+
+  .made__descr {
+    padding: 32px;
+  }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
@@ -665,7 +671,7 @@ button {
   }
 
   .section {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
 
   .nav-media-wrapper {
@@ -726,10 +732,21 @@ button {
   }
   .made__video {
     background-image: url(../images/made_desk@1x.webp);
+    margin-bottom: 0;
   }
   .container.made-container {
     max-width: 1200px;
     padding: 0 32px;
+  }
+  .made__inner {
+    display: flex;
+    gap: 20px;
+  }
+  .made__descr {
+    max-width: 516px;
+  }
+  .made__text {
+    padding-right: 27px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
