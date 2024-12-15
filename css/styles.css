@@ -378,8 +378,15 @@ button {
   .nav-media-wrapper {
     gap: 90px;
   }
+  .nav__list {
+    gap: 24px;
+}
   .logo {
     font-size: 18px;
+  }
+  .logo__svg {
+    width: 24px;
+    height: 24px;
   }
   .hero__inner {
     height: calc(100vh - 102px);
