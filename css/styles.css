@@ -205,7 +205,7 @@ button {
   height: calc(100vh - 82px);
   max-height: 620px;
   background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-    url(../images/hero-bg_mob@1x.jpg);
+    url(../images/hero-bg_mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -361,7 +361,7 @@ button {
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__inner {
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-      url(../images/hero-bg_mob@2x.jpg);
+      url(../images/hero-bg_mob@2x.webp);
   }
 }
 
@@ -411,7 +411,7 @@ button {
     height: calc(100vh - 102px);
     padding: 40px;
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-      url(../images/hero-bg_tab@1x.jpg);
+      url(../images/hero-bg_tab@1x.webp);
   }
 
   .hero__title {
@@ -453,7 +453,7 @@ button {
     width: calc((100% - 88px) / 2);
     margin-bottom: 0;
   }
-  
+
   .features__item:last-of-type {
     min-height: 244px;
   }
@@ -461,7 +461,7 @@ button {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-        url(../images/hero-bg_tab@2x.jpg);
+        url(../images/hero-bg_tab@2x.webp);
     }
   }
 }
@@ -495,7 +495,7 @@ button {
   .hero__inner {
     height: calc(100vh - 102px);
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-      url(../images/hero-bg_desk@1x.jpg);
+      url(../images/hero-bg_desk@1x.webp);
   }
 
   .features__item {
@@ -505,7 +505,7 @@ button {
 
   .features__item:not(:last-of-type)::after {
     position: absolute;
-    content: "";
+    content: '';
     height: 124px;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -520,7 +520,7 @@ button {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
-        url(../images/hero-bg_desk@2x.jpg);
+        url(../images/hero-bg_desk@2x.webp);
     }
   }
 }
