@@ -589,7 +589,7 @@ button {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   opacity: 0;
-  transition: opacity 300ms, backdrop-filter 300ms;
+  transition: opacity 500ms, backdrop-filter 500ms;
 }
 .top-sellers__title {
   text-transform: uppercase;
@@ -879,6 +879,12 @@ button {
   }
   .products__item {
     width: calc((100% - 54px) / 4);
+  }
+  .top-sellers__item.third {
+    display: block;
+  }
+  .top-sellers__item {
+    width: calc((100% - 32px) / 3);
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
