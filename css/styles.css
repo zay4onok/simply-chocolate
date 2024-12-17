@@ -769,6 +769,10 @@ input {
 .pop-up__input:focus + .pop-up__svg > .pop-up__svg-fill {
   stroke: var(--accent);
 }
+.pop-up__input:not(:placeholder-shown):invalid + .pop-up__svg > g > .pop-up__svg-fill {
+  stroke: rgba(231, 74, 59, 1);
+}
+
 .pop-up__input:focus + .pop-up__svg > g > .pop-up__svg-fill {
   stroke: var(--accent);
 }
