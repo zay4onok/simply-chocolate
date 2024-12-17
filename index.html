@@ -1030,7 +1030,7 @@
               </p>
             </li>
           </ul>
-          <button class="reviews__btn btn" type="button">Leave a review</button>
+          <button class="reviews__btn btn" type="button" data-modal-open>Leave a review</button>
         </div>
       </section>
     </main>
@@ -1133,6 +1133,252 @@
       </ul>
     </div>
 
+    <!-- ! pop-up -->
+
+    <div class="pop-up is-hidden" data-modal>
+      <div class="pop-up__content">
+        <button class="pop-up__close" type="button" aria-label="clese btn" data-modal-close
+          ><img
+            class="pop-up__close-img"
+            width="24"
+            height="24"
+            src="./images/x-close.svg"
+            alt="clese btn image"
+            loading="lazy"
+        /></button>
+        <p class="pop-up__title h2"
+          >leave a review <br />
+          about <span>our chocolate</span></p
+        >
+        <form class="pop-up__form">
+          <div class="pop-up__form-box">
+            <label class="pop-up__label" for="user_name">Name</label>
+            <div class="pop-up__input-box">
+              <input
+                class="pop-up__input"
+                type="text"
+                id="user_name"
+                name="user_name"
+                minlength="2"
+                maxlength="20"
+                placeholder=""
+                required
+              />
+              <svg
+                class="pop-up__svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="pop-up__svg-fill"
+                  d="M15 15.75V14.25C15 13.4544 14.6839 12.6913 14.1213 12.1287C13.5587 11.5661 12.7956 11.25 12 11.25H6C5.20435 11.25 4.44129 11.5661 3.87868 12.1287C3.31607 12.6913 3 13.4544 3 14.25V15.75"
+                  stroke="#404040"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="pop-up__svg-fill"
+                  d="M9 8.25C10.6569 8.25 12 6.90685 12 5.25C12 3.59315 10.6569 2.25 9 2.25C7.34315 2.25 6 3.59315 6 5.25C6 6.90685 7.34315 8.25 9 8.25Z"
+                  stroke="#404040"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="pop-up__invalid"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 11.25H9.75V12.75H8.25V11.25ZM8.25 5.25H9.75V9.75H8.25V5.25ZM8.9925 1.5C4.8525 1.5 1.5 4.86 1.5 9C1.5 13.14 4.8525 16.5 8.9925 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 8.9925 1.5ZM9 15C5.685 15 3 12.315 3 9C3 5.685 5.685 3 9 3C12.315 3 15 5.685 15 9C15 12.315 12.315 15 9 15Z"
+                  fill="#E74A3B"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="pop-up__form-box">
+            <label class="pop-up__label" for="user_email">Email</label>
+            <div class="pop-up__input-box">
+              <input
+                class="pop-up__input"
+                type="email"
+                id="user_email"
+                name="user_email"
+                maxlength="320"
+                placeholder=""
+                required
+              />
+
+              <svg
+                class="pop-up__svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="pop-up__svg-fill"
+                  d="M3 3H15C15.825 3 16.5 3.675 16.5 4.5V13.5C16.5 14.325 15.825 15 15 15H3C2.175 15 1.5 14.325 1.5 13.5V4.5C1.5 3.675 2.175 3 3 3Z"
+                  stroke="#404040"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="pop-up__svg-fill"
+                  d="M16.5 4.5L9 9.75L1.5 4.5"
+                  stroke="#404040"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <svg
+                class="pop-up__invalid"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 11.25H9.75V12.75H8.25V11.25ZM8.25 5.25H9.75V9.75H8.25V5.25ZM8.9925 1.5C4.8525 1.5 1.5 4.86 1.5 9C1.5 13.14 4.8525 16.5 8.9925 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 8.9925 1.5ZM9 15C5.685 15 3 12.315 3 9C3 5.685 5.685 3 9 3C12.315 3 15 5.685 15 9C15 12.315 12.315 15 9 15Z"
+                  fill="#E74A3B"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="pop-up__form-box">
+            <label class="pop-up__label" for="user_phone">Phone</label>
+            <div class="pop-up__input-box">
+              <input
+                class="pop-up__input"
+                type="tel"
+                id="user_phone"
+                name="user_phone"
+                minlength="13"
+                maxlength="13"
+                placeholder=""
+                required
+              />
+
+              <svg
+                class="pop-up__svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_609_2304)">
+                  <path
+                    class="pop-up__svg-fill"
+                    d="M16.5001 12.6901V14.9401C16.5009 15.1489 16.4581 15.3557 16.3745 15.5471C16.2908 15.7385 16.168 15.9103 16.0141 16.0515C15.8602 16.1927 15.6785 16.3002 15.4806 16.3671C15.2828 16.434 15.0731 16.4589 14.8651 16.4401C12.5572 16.1893 10.3403 15.4007 8.39257 14.1376C6.58044 12.9861 5.04407 11.4497 3.89257 9.63757C2.62506 7.68098 1.83625 5.45332 1.59007 3.13507C1.57133 2.92767 1.59598 2.71864 1.66245 2.52129C1.72892 2.32394 1.83575 2.14259 1.97615 1.98879C2.11654 1.83499 2.28743 1.7121 2.47792 1.62796C2.6684 1.54382 2.87433 1.50027 3.08257 1.50007H5.33257C5.69655 1.49649 6.04942 1.62538 6.32539 1.86272C6.60137 2.10006 6.78163 2.42966 6.83257 2.79007C6.92754 3.51012 7.10366 4.21712 7.35757 4.89757C7.45848 5.16602 7.48032 5.45776 7.4205 5.73823C7.36069 6.01871 7.22172 6.27616 7.02007 6.48007L6.06757 7.43257C7.13524 9.31023 8.68991 10.8649 10.5676 11.9326L11.5201 10.9801C11.724 10.7784 11.9814 10.6395 12.2619 10.5796C12.5424 10.5198 12.8341 10.5417 13.1026 10.6426C13.783 10.8965 14.49 11.0726 15.2101 11.1676C15.5744 11.219 15.9071 11.4025 16.145 11.6832C16.3828 11.9639 16.5092 12.3223 16.5001 12.6901Z"
+                    stroke="#404040"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_609_2304">
+                    <rect width="18" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <svg
+                class="pop-up__invalid"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 11.25H9.75V12.75H8.25V11.25ZM8.25 5.25H9.75V9.75H8.25V5.25ZM8.9925 1.5C4.8525 1.5 1.5 4.86 1.5 9C1.5 13.14 4.8525 16.5 8.9925 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 8.9925 1.5ZM9 15C5.685 15 3 12.315 3 9C3 5.685 5.685 3 9 3C12.315 3 15 5.685 15 9C15 12.315 12.315 15 9 15Z"
+                  fill="#E74A3B"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="pop-up__form-box">
+            <label class="pop-up__label" for="user_comment">Comment</label>
+            <div class="pop-up__input-box">
+              <textarea
+                class="pop-up__input pop-up__textarea"
+                name="user_comment"
+                id="user_comment"
+                placeholder="Enter text"
+                minlength="10"
+                maxlength="500"
+                required
+              ></textarea>
+              <svg
+                class="pop-up__invalid"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.25 11.25H9.75V12.75H8.25V11.25ZM8.25 5.25H9.75V9.75H8.25V5.25ZM8.9925 1.5C4.8525 1.5 1.5 4.86 1.5 9C1.5 13.14 4.8525 16.5 8.9925 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 8.9925 1.5ZM9 15C5.685 15 3 12.315 3 9C3 5.685 5.685 3 9 3C12.315 3 15 5.685 15 9C15 12.315 12.315 15 9 15Z"
+                  fill="#E74A3B"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="pop-up__checkbox">
+            <input
+              class="pop-up__checkbox-input visuality-hidden"
+              type="checkbox"
+              name="user_privacy"
+              id="user_privacy"
+              value="true"
+              required
+            />
+            <label class="pop-up__checkbox-label" for="user_privacy">
+              <span class="pop-up__checkbox-style">
+                <svg
+                  class="pop-up__checkbox-svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.94874 9.75416C4.38459 9.75416 4.71409 9.58679 4.93724 9.25207L9.76464 1.97696C9.84484 1.85841 9.90411 1.7416 9.94247 1.62654C9.98082 1.50799 10 1.39467 10 1.28658C10 0.986723 9.8954 0.739164 9.68619 0.543906C9.48047 0.345161 9.22594 0.245789 8.92259 0.245789C8.71339 0.245789 8.53556 0.28763 8.38912 0.371312C8.24616 0.451507 8.11018 0.590977 7.98117 0.789722L3.92782 7.15478L1.89854 4.72278C1.67887 4.46824 1.40342 4.34098 1.07218 4.34098C0.761855 4.34098 0.505579 4.44035 0.303347 4.63909C0.101116 4.83784 0 5.08714 0 5.387C0 5.52299 0.0209205 5.652 0.0627615 5.77403C0.108089 5.89258 0.190028 6.01636 0.308577 6.14537L3.00209 9.32006C3.24965 9.60946 3.5652 9.75416 3.94874 9.75416Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <span class="pop-up__checkbox-text">
+                I accept the terms and conditions of the
+                <a class="pop-up__checkbox-privacy" href="#" aria-label="link to privacy"
+                  >Privacy Policy</a
+                >
+              </span>
+            </label>
+          </div>
+          <button class="pop-up__btn btn yellow-btn" type="submit" aria-label="send form"
+            >Send</button
+          >
+        </form>
+      </div>
+    </div>
+
     <!-- ! scrtipts -->
 
     <script
@@ -1142,5 +1388,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
