@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', serif;
   font-weight: 400;
@@ -57,6 +61,7 @@ button {
   font-weight: 600;
   border-radius: 100px;
   padding: 12px 28px;
+  display: block;
   transition: background-color 300ms, color 300ms, border-color 300ms;
 }
 
@@ -598,6 +603,54 @@ button {
   font-size: 18px;
   line-height: 1.3;
 }
+
+/* ! reviews */
+
+.reviews {
+}
+
+.reviews__list {
+  margin-bottom: 32px;
+}
+
+.reviews__item {
+  position: relative;
+  text-align: center;
+  background-color: var(--white);
+  border: 1px solid #1111111a;
+  border-radius: 15px;
+  padding: 56px 18px 42px;
+  margin-top: 74px;
+}
+.reviews__item-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.reviews__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+.reviews__item-text {
+  color: #111111b2;
+}
+.reviews__btn {
+  margin: 0 auto;
+  border: 1px solid var(--accent);
+}
+
+.reviews__btn:hover,
+.reviews__btn:focus,
+.reviews__btn:active {
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+/* ! media */
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__inner {
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
