@@ -881,7 +881,7 @@ button {
     width: calc((100% - 54px) / 4);
   }
   .top-sellers__item.third {
-    display: block;
+    display: flex;
   }
   .top-sellers__item {
     width: calc((100% - 32px) / 3);
