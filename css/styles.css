@@ -48,6 +48,7 @@ ul {
 
 button {
   background-color: transparent;
+  color: inherit;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -787,7 +788,6 @@ input {
   margin-top: 18px;
   margin-bottom: 32px;
 }
-
 
 .pop-up__checkbox-input:checked + .pop-up__checkbox-label > .pop-up__checkbox-style {
   background-color: var(--accent);
