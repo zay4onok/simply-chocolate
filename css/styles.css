@@ -955,6 +955,18 @@ button {
   .top-sellers__item {
     width: calc((100% - 32px) / 3);
   }
+  .reviews__list {
+    gap: 28px;
+  }
+
+  .reviews__item {
+    width: calc((100% - 56px) / 3);
+    padding: 56px 24px 24px;
+  }
+
+  .reviews__item.third {
+    display: block;
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
       background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
