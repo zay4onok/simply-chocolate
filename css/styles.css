@@ -120,6 +120,19 @@ input {
   line-height: 1.15;
 }
 
+.nav__item,
+.nav__link {
+  transition: color 300ms;
+}
+
+.nav__item:hover,
+.nav__item:active {
+  color: var(--accent);
+}
+.nav__link:focus {
+  color: var(--accent);
+}
+
 .header .social-media {
   display: none;
 }
@@ -1373,8 +1386,7 @@ input {
   .reviews__item.third {
     display: block;
   }
-  .footer__title 
-  {
+  .footer__title {
     margin-right: auto;
   }
   .footer__social-media {
