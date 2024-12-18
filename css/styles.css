@@ -1444,3 +1444,23 @@ input {
     padding: 12px 14px;
   }
 }
+
+@media only screen and (max-height: 636px) {
+  .pop-up__close {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    right: 8px;
+  }
+  .pop-up__title {
+    margin-top: 28px;
+    padding-bottom: 8px;
+  }
+  .pop-up__checkbox {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .pop-up__btn {
+    margin-bottom: 16px;
+  }
+}
