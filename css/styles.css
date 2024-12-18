@@ -914,13 +914,13 @@ input {
 .footer__form-input {
   border: 1.5px solid #ffffff26;
   border-radius: 30px;
-  padding: 14px 18px;
+  padding: 0 18px;
   width: 100%;
   color: var(--white);
   height: 45px;
 }
 .footer__form-btn {
-  padding: 14px 24px;
+  padding: 0 24px;
   height: 45px;
 }
 
@@ -1193,7 +1193,7 @@ input {
 
   .footer__inner {
     padding: 50px 0;
-}
+  }
 
   .footer__title {
     line-height: 1.2;
@@ -1241,7 +1241,7 @@ input {
   }
 
   .footer__form-btn {
-    padding: 14px 28px;
+    padding: 0 28px;
   }
 
   .footer .nav__item:not(:last-of-type) {
@@ -1372,6 +1372,19 @@ input {
 
   .reviews__item.third {
     display: block;
+  }
+  .footer__title 
+  {
+    margin-right: auto;
+  }
+  .footer__social-media {
+    margin-right: 50px;
+  }
+  .footer__form-btn {
+    height: 52px;
+  }
+  .footer__form-input {
+    height: 52px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
