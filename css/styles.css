@@ -1015,7 +1015,8 @@ input {
   }
 
   .hero__inner {
-    height: 890px;
+    height: calc(100vh - 100px);
+    max-height: 890px;
     padding: 40px;
     background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
       url(../images/hero-bg_tab@1x.webp);
