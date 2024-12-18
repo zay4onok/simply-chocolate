@@ -238,7 +238,8 @@ input {
 }
 
 .hero__inner {
-  height: 620px;
+  height: calc(100vh - 82px);
+  max-height: 620px;
   background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
     url(../images/hero-bg_mob@1x.webp);
   background-repeat: no-repeat;
