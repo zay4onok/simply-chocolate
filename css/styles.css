@@ -735,6 +735,9 @@ input {
   transition: border-color 300ms;
 }
 .pop-up__input::placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   color: #4040404d;
 }
 
@@ -776,6 +779,7 @@ input {
 
 .pop-up__textarea::placeholder {
   color: #4040404d;
+  top: 23px;
 }
 
 .pop-up__svg {
@@ -1231,6 +1235,9 @@ input {
   .pop-up__checkbox-label {
     display: flex;
     align-items: center;
+  }
+  .pop-up__input::placeholder {
+    font-size: 14px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
