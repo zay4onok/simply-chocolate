@@ -1269,6 +1269,7 @@ input {
 
   .footer__form-input {
     width: 232px;
+    padding: 0 24px;
   }
 
   .footer__form-btn {
@@ -1281,6 +1282,10 @@ input {
 
   .footer__title {
     font-size: 28px;
+  }
+
+  .footer .invalid {
+    right: 24px;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1412,9 +1417,16 @@ input {
   }
   .footer__form-btn {
     height: 52px;
+    padding: 0 32px;
   }
   .footer__form-input {
     height: 52px;
+  }
+  .footer__form-input {
+    width: 313px;
+  }
+  .footer .nav__list {
+    gap: 24px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero__inner {
