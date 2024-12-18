@@ -120,16 +120,13 @@ input {
   line-height: 1.15;
 }
 
-.nav__item,
 .nav__link {
   transition: color 300ms;
 }
 
+.nav__link:focus,
 .nav__item:hover,
 .nav__item:active {
-  color: var(--accent);
-}
-.nav__link:focus {
   color: var(--accent);
 }
 
