@@ -734,6 +734,9 @@ input {
   border-radius: 8px;
   transition: border-color 300ms;
 }
+.pop-up__input::placeholder {
+  color: #4040404d;
+}
 
 .pop-up__input:not(:placeholder-shown):invalid {
   border-color: rgba(231, 74, 59, 1);
