@@ -5,10 +5,26 @@
     modal: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', onOpenModalBtn);
+  refs.closeModalBtn.addEventListener('click', onCloseModalBtn);
+  refs.modal.addEventListener('submit', onModalSubmit);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+  if (localStorage.getItem('formOpen')) {
+    refs.modal.classList.remove('is-hidden');
+  }
+
+  function onOpenModalBtn() {
+    refs.modal.classList.remove('is-hidden');
+    localStorage.setItem('formOpen', 'true');
+  }
+
+  function onCloseModalBtn() {
+    refs.modal.classList.add('is-hidden');
+    localStorage.removeItem('formOpen');
+  }
+
+  function onModalSubmit(event) {
+    refs.modal.classList.add('is-hidden');
+    localStorage.removeItem('formOpen');
   }
 })();

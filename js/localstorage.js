@@ -1,7 +1,7 @@
-import { save, load } from './03-localstorage-helper';
+import { save, load } from './localstorage-helper.js';
 
 const refs = {
-  formEl: document.querySelector('.feedback-form'),
+  formEl: document.querySelector('.js-pop-up__form'),
 };
 
 function loadFromLocalStorage() {
@@ -21,7 +21,7 @@ function onFormElChange() {
   data.forEach((value, key) => {
     userData[key] = value;
   });
-  
+
   save('userData', userData);
 }
 
