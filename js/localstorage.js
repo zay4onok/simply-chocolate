@@ -26,8 +26,6 @@ function onFormElChange() {
 }
 
 function onFormElSubmit(event) {
-  event.preventDefault();
-
   console.log(load('userData'));
 
   localStorage.removeItem('userData');
